@@ -1,0 +1,197 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16/05/2023, 3:09:49 AM
+    Author     : Alexander
+*/
+
+/*Header Styles*/
+.header {
+    background-color: #2D86A7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+        }
+.headerText {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/*Index Styles*/
+.centreBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -200px;
+}
+.indexButton {
+    background-color: #2D86A7;
+    border: none;
+    color: white;
+    padding: 50px 0px;
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 25px; 
+}
+.indexButton:hover {
+    background-color: #65BFE1;
+}
+
+/*Login Styles*/
+.formBox {
+    background-color: #87CEEB; /* Light blue background color */
+    width: 300px; /* Set the width of the box */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 20px; /* Add padding for content */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack contents vertically */
+    justify-content: center; /* Center contents vertically */
+    align-items: center; /* Center contents horizontally */
+    text-align: center;
+
+}
+.formParagraph {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+.formTitle {
+    color: white;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+}
+.formButton {
+    background-color: #2D86A7;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px auto; /* Horizontally center the button */
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formButton:hover {
+    background-color: #65BFE1;
+}
+.formError {
+    color: black;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.mainTable {
+    width: 50%; /* Adjust the width as per your requirement */
+    margin: 0 auto; /* Center the table horizontally */
+    background-color: #87CEEB; /* Light blue background color */
+    border: 2px solid #2D86A7; /* Dark blue border */
+    border-collapse: collapse; /* Collapse internal borders */
+    font-family: Arial, sans-serif;
+}
+
+.mainTable th, .mainTable td {
+    border: 1px solid #2D86A7; /* Dark blue border for table cells */
+    padding: 8px; /* Add padding for table cells */
+    font-family: Arial, sans-serif;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 10px; /* Gap between buttons */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+.mainButton {
+    background-color: #2D86A7;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px auto; /* Horizontally center the button */
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainButton:hover {
+    background-color: #65BFE1;
+}
+
+.deleteBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    color: #2D86A7;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header2ButtonAnon {
+  background-color: #84A5B2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  width: 50%;
+  text-align: center;
+}
+.header2ButtonAnon:hover {
+  background-color: #65BFE1;
+}
+.header2Button {
+  background-color: #84A5B2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  width: 50%;
+  text-align: center;
+}
+.header2Button:hover {
+  background-color: #65BFE1;
+}
+
