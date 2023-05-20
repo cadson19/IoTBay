@@ -1,0 +1,56 @@
+    //----------------Fatins Order Database Manager Functions-----------------------------------
+
+    
+    
+      public void addOrder(String orderId, String userId, String deviceId, int quantity) throws SQLException {
+    String sql = "INSERT INTO ISDUSER.ORDERS (ORDERID, USERID, DEVICEID, QUANTITY) " +
+                 "VALUES ('" + orderId + "', '" + userId + "', '" + deviceId + "', " + quantity + ")";
+    
+    st.executeUpdate(sql);    }
+      
+    public void addOrderHistory(String ID, String userId, LocalDate orderDate) throws SQLException {
+        st.executeUpdate("INSERT INTO ISDUSER.ORDERLOG " + "VALUES ('" + ID + "', '" + userId + "','" + orderDate + "')");
+
+    }
+    // Get a specific order by its order number
+    public Order getOrder(String orderid) throws SQLException{
+
+       String fetch = "select * from ISDUSER.ORDERS where ORDERID = '" + orderid + "'";
+        ResultSet rs = st.executeQuery(fetch);
+
+        while (rs.next()) {
+        String fetchedOrderId = rs.getString("ORDERID");
+        if (fetchedOrderId.equals(orderid)) {
+            String userId = rs.getString("USERID");
+            String deviceId = rs.getString("DEVICEID");
+            int quantity = Integer.parseInt(rs.getString("QUANTITY"));
+            
+            return new Order(orderid, userId, deviceId, quantity);
+        }
+    }
+    return null;
+}
+
+ public void deleteOrder(String orderid) throws SQLException {
+        st.executeUpdate("DELETE FROM  ISDUSER.ORDERS WHERE ORDERID = '" + orderid + "'");
+    }
+    public void updateOrder( String productid, int quantity, String orderid) throws SQLException {
+        st.executeUpdate("UPDATE ISDUSER.ORDERS SET DEVICEID='" + productid + "',QUANTITY='" + quantity + "' WHERE ORDERID='" + orderid + "'");
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
